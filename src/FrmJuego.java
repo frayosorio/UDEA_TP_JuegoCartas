@@ -8,6 +8,8 @@ import javax.swing.JPanel;
 import javax.swing.JTabbedPane;
 import javax.swing.WindowConstants;
 
+import javax.swing.JOptionPane;
+
 public class FrmJuego extends JFrame {
 
     private JButton btnRepartir;
@@ -75,10 +77,10 @@ public class FrmJuego extends JFrame {
     private void btnVerificarClick(ActionEvent evt) {
         switch (tpJugadores.getSelectedIndex()) {
             case 0:
-
+                JOptionPane.showMessageDialog(null, jugador1.getGrupos());
                 break;
             case 1:
-
+                JOptionPane.showMessageDialog(null, jugador2.getGrupos());
                 break;
         }
     }
